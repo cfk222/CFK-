@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 左侧固定区域 -->
+    <div class="sidebar">
+        <div class="avatar-container">
+            <img src="images/微信图片_20241227161104.jpg" alt="头像" class="avatar">
+            <h2 class="name">陈疯狂</h2>
+            <p class="signature">我心自有云白山青</p>
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="main-content">
+        <!-- 导航栏 -->
+        <nav class="top-nav">
+            <ul>
+                <li class="active"><a href="#home">首页</a></li>
+                <li><a href="#about">个人简介</a></li>
+                <li><a href="#interests">兴趣爱好</a></li>
+                <li><a href="#gallery">个人相册</a></li>
+            </ul>
+        </nav>
+
+        <!-- 内容区域 -->
+        <div class="content-area">
+            <!-- 首页 -->
+            <section id="home" class="section active" data-aos="fade-up">
+                <div class="welcome-card">
+                    <h1>欢迎来到我的个人空间</h1>
+                    <p>这里是我展示自我的地方</p>
+                </div>
+            </section>
+
+            <!-- 个人简介 -->
+            <section id="about" class="section" data-aos="fade-up">
+                <div class="about-card">
+                    <h2>关于我</h2>
+                    <p>一个不会代码的小唐人，来自上海浦东，08年（未来之星）</p>
+                    <div class="skills">
+                        <span class="skill-tag">吹牛皮</span>
+                        <span class="skill-tag">我不会代码</span>
+                        <span class="skill-tag">说唱</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 兴趣爱好 -->
+            <section id="interests" class="section" data-aos="fade-up">
+                <div class="interests-card">
+                    <h2>兴趣爱好</h2>
+                    <div class="interests-grid">
+                        <div class="interest-item" data-aos="fade-up">
+                            <i class="fab fa-tiktok"></i>
+                            <h3>抖音</h3>
+                            <p>刷视频的快乐</p>
+                        </div>
+                        <div class="interest-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>王者荣耀</h3>
+                            <p>峡谷冲分ing</p>
+                        </div>
+                        <div class="interest-item" data-aos="fade-up" data-aos-delay="200" onclick="showWechatQR()" style="cursor: pointer;">
+                            <i class="fab fa-weixin"></i>
+                            <h3>微信</h3>
+                            <p>社交必备</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 个人相册 -->
+            <section id="gallery" class="section" data-aos="fade-up">
+                <div class="gallery-card">
+                    <h2>个人相册</h2>
+                    <div class="gallery-grid">
+                        <!-- 相册内容将在这里展示 -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 底部社交媒体栏 -->
+        <footer class="social-footer">
+            <div class="social-icons">
+                <a href="javascript:void(0)" class="social-icon" id="wechat" onclick="showWechatQR()">
+                    <i class="fab fa-weixin"></i>
+                </a>
+                <a href="#" class="social-icon"><i class="fab fa-qq"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 脚本���用 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
